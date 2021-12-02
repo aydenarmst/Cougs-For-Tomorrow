@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFT</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class = "logo" href="#">Cougs<span class = "middle">For</span><span class="end">Tomorrow</span></a>
+            <button class = "hamburger">
+                <span class="rectangle rectangle--top rectangle--small"></span>
+                <span class="rectangle rectangle--middle"></span>
+                <span class="rectangle rectangle--bottom rectangle--small"></span>
+            </button>
+            <nav>
+                <ul class = "primary-nav">
+                    <li class = "current"><a href="#">HOME</a></li>
+                    <li><a href="#our-process" class = "our">OUR PROCESS</a></li>
+                    <li><a href="#problem" class = "problemLink">THE PROBLEM</a></li>
+                    <li><a href="#upgrades" class = "upgradesLink">POSSIBLE UPGRADES</a></li>
+                    <li class = "decision-tree-cta"><a href="#solution">THE SOLUTION</a></li>
+                    <li><a href="#citation" class = "citationLink">SOURCES</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        const links2 = document.querySelector('.problemLink');
+        const nav2 = document.querySelector('nav');
+        const hamburger2 = document.querySelector(".hamburger");
+
+        links2.addEventListener("click", () => {
+            nav2.classList.remove("open");
+            hamburger2.querySelectorAll("span").forEach(
+                (span) => span.classList.toggle("open"));
+        });
+
+        const links21 = document.querySelector('.our');
+        const nav21 = document.querySelector('nav');
+        const hamburger21 = document.querySelector(".hamburger");
+
+        links21.addEventListener("click", () => {
+            nav21.classList.remove("open");
+            hamburger21.querySelectorAll("span").forEach(
+                (span) => span.classList.toggle("open"));
+        });
+
+
+
+
+        const links3 = document.querySelector('.upgradesLink');
+        const nav3 = document.querySelector('nav');
+        const hamburger3 = document.querySelector(".hamburger");
+
+        links3.addEventListener("click", () => {
+            nav3.classList.remove("open");
+            hamburger3.querySelectorAll("span").forEach(
+                (span) => span.classList.toggle("open"));
+        });
+
+
+        const links4 = document.querySelector('.citationLink');
+        const nav4 = document.querySelector('nav');
+        const hamburger4 = document.querySelector(".hamburger");
+
+        links4.addEventListener("click", () => {
+            nav4.classList.remove("open");
+            hamburger4.querySelectorAll("span").forEach(
+                (span) => span.classList.toggle("open"));
+        });
+
+        const links5 = document.querySelector('.decision-tree-cta');
+        const nav5 = document.querySelector('nav');
+        const hamburger5 = document.querySelector(".hamburger");
+
+        links5.addEventListener("click", () => {
+            nav5.classList.remove("open");
+            hamburger5.querySelectorAll("span").forEach(
+                (span) => span.classList.toggle("open"));
+        });
+
+        const links6 = document.querySelector('.contactLink');
+        const nav6 = document.querySelector('nav');
+        const hamburger6 = document.querySelector(".hamburger");
+
+        links6.addEventListener("click", () => {
+            nav6.classList.remove("open");
+            hamburger6.querySelectorAll("span").forEach(
+                (span) => span.classList.toggle("open"));
+        });
+    </script>
+
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector('nav');
+   
+         hamburger.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            hamburger.querySelectorAll("span").forEach(
+                (span) => span.classList.toggle("open"));
+            });
+    </script>
+
+    
+    <section class = "hero">
+        <div class="conatiner">
+            <div class="left-col">
+                <h1>Pullman</h1>
+                <p class = "subhead">2021 ORISE MEAN, GREEN, RECYCLING MACHINES</p>
+                
+
+                <div class="hero-cta">
+                    <a href="#problem" class = "problem-cta">THE PROBLEM</a>
+                    <a href="#solution" class = "decision-cta">THE SOLUTION</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="abstract">
+        <div class="container">
+            <h1 class="abstract">ABSTRACT</h1>
+        <p class="text">
+            The Purpose of this website is to bring quanitifiable and on-the-group information to inform the students, faculty and the administration of Washington State Univeristys Pullman campus on our plastic recycling process's, as well as some research finding's of how to make these process's more effecient
+            This project is being conducted on behalf of the 2021 ORISE Mean, Green Recycling Machines scholarship competition, the problem they stated for the reasoning of the competition is stated as "According to National Geographic the world generates at least 3.5 million tons of plastic and other solid waste a day. This is 10 times the amount the world produced a century ago. Waste negatively effects our natural environment and this negative impact continues to grow. Awareness needs to be brought to recycling and upcycling efforts. DOE is doing its part to mitigate the lasting effects of plastic waste buildup through new research and development into upcycling polymers. Many communities have developed recycling programs to help with energy efficiency and preserving our natural environment." All data provided will be at the bottom in the "sources" page. 
+        </p>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="waste-path" id = 'our-process'>
+        <div class="container">
+            <ul>
+                <h2 class="our-process">our process</h2>
+
+
+                <li class="collection" >
+                    <h2 class="collection-header">collection:</h2>
+                    <img src="./image/co-mingle.svg" id = "recycleBin" alt="recycling bins" >
+                    <img src="./image/landfill.svg" id = "landfillBin" alt="landfill-bin">
+                    <img src="./image/office-paper.svg" id = "officePaperBin" alt="office-paper">
+                    <p class="collection-text">
+                        <span class="show-collection">
+                            Making use of the 1,600 recycling bins located on campus (WSU Insider, 2017). Washington state univeristy's Pullman campus has implemented a process of collection to what is known as <span class="dual">dual-stream recycling</span>. The process of a dual-stream collection system seperates recyclables into two categories, paper fiber (office paper bin) and plastic's (co-mingled). The alterantive to this method is single-stream recycling which instead uses one bin for all recyclables including paper, but this also increases contaminates and diffuctlty in sorting. Although single-stream reduces the cost of collection, the contamintes on & in the recyclables in result make the average facility cost running single-stream 8% higher than dual stream facilities (thecif,2017). The visual above displays similar cans that are lined up like this throughout campus. This system is proven to be both beneficial to sorting efficiency and yield of recyclable collection (thecif, 2017).
+                        </span>
+                    </p>
+                    <button class="showMoreBtn">Show More</button>
+                </li>
+                <script>
+                    const collectionReadBtn = document.querySelector('.showMoreBtn');
+                    const collectionText = document.querySelector('.collection-text');
+       
+
+                    collectionReadBtn.addEventListener('click', () =>{
+                    collectionText.classList.toggle('show-more');
+           
+                    if(collectionReadBtn.innerText == 'Show More'){
+                        collectionReadBtn.innerText = 'Show Less';
+                    }else{
+                        collectionReadBtn.innerText = 'Show More';
+                    }
+                })
+                </script>
+
+
+
+
+                <li class="transportation">
+                    <h2 class = "transportation-header"  >transportation:</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5469.5263509833185!2d-117.158720333636!3d46.73013242724776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x549f871ba223e36f%3A0x95ae6458a4cc6511!2sWSU%20-%20Compton%20union%20building%2C%20Glenn%20Terrell%20Mall%2C%20Pullman%2C%20WA!3m2!1d46.7310689!2d-117.16251319999999!4m5!1s0x549f870ecb3d7efb%3A0xa547de8d7fec2fc9!2s250%20Dairy%20Rd%2C%20Pullman%2C%20WA%2099164!3m2!1d46.7278655!2d-117.14617249999999!5e0!3m2!1sen!2sus!4v1637893143775!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p class="transportation-text">
+                        <span class="show-transportation">
+                            From the embedded map above, Washington State University's recycling center is on the right at 250 Dairy Rd. On the left resides thes Compton Union Building, which is geographically near the center of the campus and a hub for traffic on a daily bases, this commute is just under a mile . WSU's waste management has 3 trucks that collect the bins from around campus buildings, dormatories and dining halls. These 3 trucks transport about 50-60,000 pounds of recyclable waste each month and bring in to the recycling center. The recycling pickups occur on a daily bases along with general trash. 
+                        </span>
+                    </p>
+                    <button class="colShowMoreBtn">Show More</button>
+                </li>
+                <script>
+                    const transportationReadBtn = document.querySelector('.colShowMoreBtn')
+                    const traText = document.querySelector('.transportation-text');
+
+                    transportationReadBtn.addEventListener('click', () =>{
+                    traText.classList.toggle('show-more');
+
+                        if(transportationReadBtn.innerText == 'Show More'){
+                             transportationReadBtn.innerText = 'Show Less'
+                        }
+                        else{
+                            transportationReadBtn.innerText = 'Show More';
+                        }
+                    })
+                </script>
+
+
+
+
+
+                <li class="sorting-exporting">
+                    <h2 class="sorting" >sorting and exporting:</h2>
+                    <img src="./image/bailer3.png" alt="recycling bailer">
+                    <p class="sorting-text">
+                        <span class="show-sorting">
+                            In 2017, WSU Pullman estimated a yield about 1,000 tons of co-mingled plastics, paper, and cardboard from campus. Once the co-mingled plastics and other items arrive they are individually hand sorted which Director Rick Finch explained, is quite a tedious and frustrating process “Right now, we do not have a great way to sort the recycled material. What we do is transport the labeled bins to our facility, in groups. From these groups we pick out a few off pieces that are easy to see. Combine plastics #1 & #2 and market and sell the material.” these materials are then ran through an automatic bailer which compacts the co-mingled items into 1,500 pound bales (WSU Insider, 2017), these bails are then stacked in the facilities holding room and wait to be transported to various regional recycling facilities who bid on the clean recyclables. 
+                        </span>
+                    </p>
+                    <button class="sortingBtn">Show More</button>
+                </li>  
+
+
+            </ul>
+            
+            <script>
+                const sortingBtn = document.querySelector('.sortingBtn');
+                const sortingText = document.querySelector('.sorting-text');
+       
+                sortingBtn.addEventListener('click', () =>{
+                    sortingText.classList.toggle('show-more')
+                    if(sortingBtn.innerText == 'Show More'){
+                        sortingBtn.innerText = 'Show Less';
+                    }else{
+                        sortingBtn.innerText = 'Show More'
+                    }
+                })
+           </script>
+            
+        </div>
+    </section>
+
+    
+
+    <section class="the-problem" id = "problem">
+        <div class="container" ></div>
+        <ul>
+            <h1 class = "problem" data-aos = "fade-down" data-aos-duration = "1500">the problem</h1>
+
+            <li class = "in-house" data-aos = "fade-left" >
+                <h2>Sorting Efficiency:</h2>
+                <p>Washington State Universitys Pullman campus sees more than 2 million US pounds of co-mingled products each year(WSU Insider, 2017). The hand sorting process involved in the recycling facility is a rigerous task by itself, with only a hanful of individuals sorting on a daily basis. Adding to the fact that the percentage of contaminates on and in the recyclable material was 25% in 2017 before the nation sword according to director Rick Finch. This has compounded the problem of sorting effeciency in the facility which in turn results in more recylable plastic in the landfill. </p>
+            </li>
+
+            <li class = "excess" data-aos = "fade-right">
+                <h2>Addressing the "National Sword":</h2>
+                <p>On January 1, 2018 China enacted a ban on shipments of recyclable material that was mixed with trash. This ban created massive backups for international recycling systems as many people partake in "wishful reycycling" the act of putting something in the recycling bin even if it is not on the list of approved materials for the local waste managment.</p>
+            </li>
+            
+            <li class = "info" data-aos = "fade-left">
+                
+                <h2>Education:</h2>
+                <img src="./image/Rick-Finch-bales-crop.png" alt="" class="">
+                <blockquote>"We currently dont't offer any recycling tranings to incoming freshman and current students enrolled, although we would be very welecomed to introduce it. We also have been having some problems in the department which has caused websites to be taken down, we are currently working on getting these back up"</blockquote>
+                <cite>-Rick Finch, Director of WSU waste management</cite>
+            </li>
+            
+
+            <li class="economics">
+                <h2 class="sword">What is the National Sword? </h2>
+
+                <p class = "swordText">
+                    In April of 2017, China notified the WTO (World Trade Organization) it was going to reduce the amount of contaiminates allowed in recyclable material from 5-10% to .5% starting January 1, 2018.
+                    <span class="dots"> ...</span>
+                    <span class='moreText'>Although Director Rick Finch explained that percentage of contaminates present on recyclable plastics accepted from WSU pullman was closer to 25%. As the largest importer of American Recyclable's for the better part of two decades. The impact on plastic recycling in the U.S, which before the ban sent 70% of plastic's collected yearly to China, plummeted 99% resulting in massive waste stream backlogs across North America. As a result, the market for recyclable material became oversaturated with unsorted and mixed trash that wasnt economically viable(Wikipedia,2018).</span>
+                </p>
+
+                <button class="swordBtn">Show More</button>
+
+                <script>
+                    const swordBtn = document.querySelector('.swordBtn');
+                    const swordText = document.querySelector('.swordText');
+
+                    swordBtn.addEventListener('click', () =>{
+                        swordText.classList.toggle('show-more');
+
+                        if(swordBtn.innerText == 'Show More'){
+                            swordBtn.innerText = 'Show Less';
+                        }else
+                            swordBtn.innerText = 'Show More'
+                    })
+                </script>
+            </li>
+        </ul>   
+    </section>
+
+
+    <section class="upgrades" id = "upgrades">
+        <div class="container">
+            <ul>
+                <h2 class="upgrades-header" data-aos = "fade-down" data-aos-duration = "1500">possible upgrades</h2>
+                
+
+
+
+                <li class="bottleReturns" data-aos = "fade-left">
+                    <div class="container">
+                    <h2 class="pFand">Bottle Deposits</h2>
+                    <button class="button">Click Me</button>
+                    <canvas id = "canvas" width = "1500" height = "1500"></canvas>
+
+                    <h3 class="benefits">Benefits:</h3>
+                        <p class="benText">
+                            The bottle deposit system is a process that involves customers of retail store’s returning their one-time use plastic bottles, which have a barcode scanner, for a cash refund. A very notable user of this system is Germany who adopted the process in 2003 (LiveWorkGermany, 2017), they place bottle refund systems throughout high-traffic areas of large cities, for example, a corner in downtown Berlin. These standalone systems scan the barcode on the plastic item and send a refund to the patrons if the bottle is rid of contaminates. While the refund returns aren’t substantial (around 20 US cents for a single-use plastic bottle), the goal of this process is to incentivize companies to start supplying their product in multi-use, <span class="bold">refillable plastic bottles which can be used up to 25 times over</span> (Medium, 2017). This system also works to Incentivize the public to keep refillable bottles in circulation for as long as possible. If the bottles cannot be reused, then it carries the added benefit of producing clean recyclables for more efficient sorting in local facilities. This has in turn helped make significant strides towards higher recyclablity rate's for the European country as <span class="bold">recycling rates are predicted to rise to 63% for recyclable plastics by 2022 </span>(KunststoffPackugen.de, 2017), although this metric depends on much more than just bottle deposits, there must be a reason this process is still being used today. 
+                        </p>
+
+                    <h3 class="drawBack">Drawbacks:</h3>
+                        <p class="drawText">
+                            While the bottle deposit system has worked great for Germany, it comes with its own set of drawbacks. The system in Germany is designed in a way which, a producer bottles and fills the product and sells it to wholesale or retail businesses. The retailer then pays a deposit to the producer, this deposit is then passed directly to the consumer as a surcharge. This surcharge is then refunded by the retailers to the consumer when the bottles have been deposited. The problem that arises in this system is when the consumer doesn’t return the bottle, in which the retailers have been able to draw a profit from the surcharge in which the consumer never got back. This profit results in the retailer to draw a blind eye on ensuring the bottle purchased by the consumer, was in fact deposited to be reused. Secondly, according to an article by <a href="https://www.spiegel.de/wirtschaft/service/mehrwegflaschen-einwegflaschen-im-pfandflaschen-wirrwarr-a-1031491.html" class="">Spiegel</a>, in early 2015, Coca-Cola announced it would be phasing out the use of reusable plastic bottles, along with other companies who had made the decision to phase out the recyclable bottles citing high costs to manufacture.<span class="bold"> This resulted in the percentage of all bottles sold that were refilled at least one time, to drop from 64% to 45.7% by 2012</span> (Lillian Siewert, 2017), the market was losing interest. 
+                        </p>
+                    </div>
+                </li>
+
+
+
+                <li class="education" data-aos = "fade-up">
+                    <h2 class="awarenessHeader">Improving Awareness</h2>
+                    <h3 class="benefits">Benefits:</h3>
+                        <p class="benText">
+                            In a study conducted in May 2008, a researcher by the name of Rachel Abramson gave a survey to 100 random students in and around the UC Berkeley campus. Half of which lived in residence halls, the other half lived in cooperative housing. The study tested these individuals in 5 different categories all concerning sustainability awareness around campus. The survey results that stood out to me most was regarding the awareness of plastic recycling codes, in which the average surveyor scored 43.5% correctness on questions which asked things like “What number plastics does UC Berkeley recycle?” and “What is the plastic number code of a milk jug?” (Rachel Abramson, 2008). This data, even though was collected from a small group, shows a possible prediction of the study body not knowing what’s supposed to go in the recycling. Fast forward to July of 2009, UC Berkeley is selected as a top 15 university in the nation for The Princeton Reviews “green rating” evaluation. Which rates colleges on the metric of the school’s performance as an environmentally aware and prepared institution, in ratings ranging from 66-99 (The Princeton Review, 2021). UC Berkeley scored a 99. The same day the ratings for the year came out, <a href="https://www.berkeley.edu/news/media/releases/2009/07/27_green.shtml" class="ucNews">UC Berkeley News </a>published an article citing valiant efforts for why they believed they received such a high rating, a <span class="bold">“Watch us go green” ad campaign</span> that featured retro-styled posters, promoting easy steps that individuals and departments at Berkeley can do to become more sustainable was plastered on the front. This method of creating aesthetically appealing, scalable awareness tactics is not only cheap, but is also statistically proven.
+                        </p>
+
+                    <h3 class="drawBack">Drawbacks:</h3>
+                        <p class="drawText">
+                            In comparison, the drawbacks to increasing awareness around campus are miniscule from a financial standpoint. The cost to design, manufacture, and distribute awareness campaign posters and stickers isn’t nearly as costly as the bottle deposit system. In my eyes, the biggest drawback to this process would be creating lack-luster advertisements that end up not being effective and therefore wasting materials to produce the products. We also must consider that the production of these goods in a non-digital format also would contain some plastics, paper and adhesive.  
+                        </p>
+                </li>
+                
+
+                <li class="quote">
+                    <h2 class = quotes>''</h2>
+                    <p class = "block-text">
+                        Sometimes the easiest way to solve a problem is to stop participating in the problem.
+                    </p>
+                    <cite>- Jonathan Mead</cite>
+                </li>
+
+            </ul>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="mySolutionHeader" id = "solution">
+        <div class="container">
+            <h1 class="solution">Cougs For Tomorrow</h1>
+            <div class="rec">
+                <p class="why">
+                    Through the past 6 weeks of gathering data on WSU Pullman’s campus recycling method’s, researching on current data of what other universities and countries have implemented at scale in their communities. I have come to the conclusion that increasing student awareness by starting a campus wide ad campaign called Cougs For Tomorrow is not only the most cost effective process, but also the most scalable.  
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyThis">
+        <div class="container">
+            <h1 class="header">Why This?</h1>
+        <p class="text">
+            I knew once talking to Rick Finch in early October that my goal of this project was to help find a solution to increase efficiency in the sorting process of plastics here at Washington State. The tremendous task put on the schools recycling facility employee's to hand sort more than 2,000,000 lbs. of co-mingled material, paper and carboard each year (WSU Insider, 2017) which has an indirect impact for the planet, as the amount of sorting and decontaminating in this volume with the resources available is nearly impossible. Forcing much of the recyclable material into the landfill (Environmental Proeciton Agency,2021). While bottle deposits are what data shows to be a very promising process to help sorting and recyclable knowledge in the community, the large logistical cost to start and maintain the program is something that may hinder its success. Cougs For Tomorrow is a step towards higher recycling ratings by informing the students and faculty not only the practice of good habits, but to visually see the impact that these habits can have. The results I’m hoping to see are similar to the turnaround at UC Berkeley during their campaign in 2009, not just winning a metric made by a school, but to make people think more about what they put in the blue bin’s around campus. 
+        </p>
+        </div>
+    </section>
+
+
+    <section class="mySolutionBody">
+        <div class="container">
+            <h2 class="goals">Goals: </h2>
+            <ul class = "goals-list">
+                <li>Easier access to online recycling resources</li>  
+                
+                <li>Online survery to obtain baseline for student knowledge</li>  
+                <li>Campus-wide poster campaign</li>  
+            </ul>
+
+
+            <ul class="access">
+                <h2 class="accessHeader">Easier Access</h2>
+                <img src="/image/myWsu.png" alt="">
+                <p class="text">
+                    The image above shows WSU’s student portal homepage myWsu, in which students can add or remove the white tiles depending on what their most used gateways are. For example, in the past year they have implemented the ‘Covid Training’ tile that was added automatically to all student’s portal homepage’s while also making the tile non-removable. My Proposal to the school is to also add a “WSU recycling center guide” tile which takes the student to either the schools Office of Procedures Manual, which is the only page I have seen for our school’s full list of acceptable and unacceptable materials to be recycled. Or to the WSU sustainability cite which gives more information on recycling practices and current/past projects. Both of which are not easily accessed websites with poor design and aesthetic appeal. The most effective process to implement the new tile would be to create a new page in general, with features of a recycling quiz, in which data can be used as a baseline to work off what recycling practices. Data from the past year so students can track progress and resources to help guide students who want more information. In a recent study by The National Wildlife Federation called “Stemming the Tide”, which offers solutions to help college campuses reduce environmental impact, making this information easy to access and appealing are cited heavily in effective strategies college campuses can take to reduce impact on the environment (Kristy Jones,2020). 
+                </p>
+                <img src="/image/website.png" alt="">
+                <p class="subText">Above is a proposed deisgn for the new WSU waste sustanablility website.</p>
+            </ul>
+
+            <ul class="poster">
+                <h2 class="header">Poster Campaign</h2>
+                <div class="container">
+                    <img src="/image/poster2.png" alt="">
+                    <img src="/image/poster1.png" alt="">
+                    <img src="/image/poster3.png" alt="">
+                    
+                </div>
+                <p class="cite">
+                    <h2 class="image">Images Courtsey Of the following artists (left to right): </h2>
+                    <ul>
+                        <a href="https://ecogreenlove.com/2017/04/19/plastic-footprint/">EcoGreenLove</a>
+                        <a href="https://marinedebris.noaa.gov/how-help/recycle">NOAA</a>
+                        <a href="https://crello.com/templates/recycling-concept-with-woman-holding-plant-in-can/id-5d9609e1abc8ea6d1c41996b/">Crello</a>
+                    </ul>
+                    
+                </p>
+                <p class="text">
+                    In a study done by researchers at Penn State University in 2019, a team put recycling signage above recycling bins on two floors of a dormitory. The first floor’s signage showed what types of recyclables were accepted. The second on the other hand, not only showed what materials were accepted, but also the possible products the recyclables could be made into. This added information of visually showing the impact recycling that one item could have resulted in an increase of 12% acceptable recyclable material being put into the added signage floor (Sara LaJeunesse, 2019). In tandem with the newly designed website, an ad campaign of visually showing how to rid plastics of contaminates and what recyclables can be turned into above recycling bins in dormitories, dining halls and campus facilities would result in an increase of recyclable awareness around campus. This method, in turn would directly impact the efficiency of in-house sorting by stopping the problem of “wishful recycling”.
+                <span class = "mega">Now for myself, I am not exactly Picasso when it comes to poster design, above are some recycling posters I have found on the internet (artist linked above) including the middle poster which is my personal favorite. What I propose for this leg of the solution is to hold a contest around campus to see who can create the most effective posters that will be put above recycling bins around campus. These posters will also be able to be downloaded or sent to any address in pullman through the new website I have proposed. </span>
+                </p>
+            </ul>
+        </div>
+    </section>
+
+    <section class="citations" id = "citation">
+        <div class="container">
+            <h2 class="header">sources</h2>
+            
+            <ul>
+                    <li><cite>“What Is the National Sword?” Center for EcoTechnology, 6 May 2020, <a href="https://www.centerforecotechnology.org/what-is-the-national-sword/.">Link</a></cite></li>
+                    <li><cite>“Operation National Sword.” Wikipedia, Wikimedia Foundation, 3 Aug. 2021, <a href="https://en.wikipedia.org/wiki/Operation_National_Sword">Link</a></cite></li>
+                    <li><cite>05, Clare Goldsberry | Jan. “New Poll Reveals That Many Americans Are Confused about Recycling.” Plasticstoday.com, 3 July 2018, <a href="https://www.plasticstoday.com/recycling/new-poll-reveals-many-americans-are-confused-about-recycling">Link</a></cite></li>
+                    <li><cite>“14 Recycling Contamination Facts That Will Blow Your Mind.” Rubicon, 22 July 2021, <a href="https://www.rubicon.com/blog/recycling-contamination-facts/.">Link</a></cite></li>
+                    <li><cite>“An Assessment of Single and Dual  Stream Recycling, Including Current Program Performance  in Large Ontario Municipalities.” Continuous Improvement Fund, 1 Nov. 2012, 18.</cite></li>
+                    <li><cite>“Recyclemania Contest Highlights Year-Round Efforts.” WSU Insider, 27 Mar. 2017, <a href="https://news.wsu.edu/news/2017/03/27/recyclemania-contest/recycling-baler/.">Link</a></cite></li>
+                    <li><cite>James. “How Does the German Pfand System Work?” Live Work Germany, James, 11 Feb. 2021, <a href="https://liveworkgermany.com/how-does-the-german-pfand-system-work/.">Link</a></cite></li>
+                    <li><cite>Germany, Live Work. “Bottle Recycling in Germany: A Model System?” Medium, Medium, 9 July 2017, <a href="https://medium.com/@liveworkgermany/the-german-pfand-bottle-recycling-system-how-does-it-work-and-is-it-effective-436972a2e0a3">Link</a></cite></li>
+                    <li><cite>(www.dw.com), Deutsche Welle. “Plastic Bottle Recycling Champion: Norway or Germany?: DW: 03.08.2018.” DW.COM, 2016, <a href="https://www.dw.com/en/plastic-bottle-recycling-champion-norway-or-germany/a-44880423#:~:text=According%20to%20a%20report%20by%20the%20German%20Society,bottles%20were%20sold%20with%20a%20deposit%20on%20them.">Link </a></cite></li>
+                    <li><cite>Bruder, Jürgen, et al. IK Industrievereinigung Kunststoffverpackungen E.V. Bundesverband Für Kunststoffverpackungen Und Folien Kaiser-Friedrich-Promenade 43, Bad Homburg, pp. 22–30, Sustainability Report 2018, <a href="https://kunststoffverpackungen.de/wp-content/uploads/2019/07/ik-nachhaltigkeitsbericht-2018-2.pdf.">Link</a> </cite></li>
+                    <li><cite>Siewert, Lillian. “Mehrwegflaschen, Einwegflaschen: Im Pfandflaschen-Wirrwarr.” DER SPIEGEL, DER SPIEGEL, 24 May 2015, <a href="https://www.spiegel.de/wirtschaft/service/mehrwegflaschen-einwegflaschen-im-pfandflaschen-wirrwarr-a-1031491.html">Link</a></cite></li>
+                    <li><cite>Abramson, Rachel. “Plastic Recycling Awareness among Students at UC Berkeley .” University of California, Berkeley, UCB, 2008, pp. 15–18. </cite></li>
+                    <li><cite>Sarah Yang, Media Relations. “Campus Environmental Record Earns Top Score in Princeton Review 'Green Ratings'.” 07.27.2009 - Campus Environmental Record Earns Top Score in Princeton Review "Green Ratings", University of California, Berkeley, 2009, <a href="https://www.berkeley.edu/news/media/releases/2009/07/27_green.shtml">Link</a></cite></li>
+                    <li><cite>“Green Rating Methodology.” Green Rating Methodology | Green Colleges | The Princeton Review, The Princeton Review, 2021, <a href="https://www.princetonreview.com/college-rankings/green-guide/methodology">Link</a></cite></li>
+                    <li><cite>“National Overview: Facts and Figures on Materials, Wastes and Recycling.” EPA, Environmental Protection Agency, 2021, <a href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials">Link</a></cite></li>
+                    <li><cite>Jones, Kristy, and Laura Hickey. “Stemming the Tide.” National Wildlife Federation, 1 Sept. 2020, <a href="https://www.nwf.org/stemmingthetide.">Link</a> </cite></li>
+                    <li><cite>“Washington State University.” Washington State University Policies, Facilities Services, Operations Waste Management, Jan. 2017, <a href="https://policies.wsu.edu/prf/index/manuals/80-00-services/80-80-recycling/.">Link</a> </cite></li>
+                    <li><cite>“Washington State University.” Sustainability Site: Waste Management, Facilities Services, Operations Waste Management, 2021, <a href="https://sustainability.wsu.edu/operations/waste-management/.">Link</a> </cite></li>
+                    <li><cite>LaJeunesse, Sara. “Awareness of Product Transformation Increases Recycling Rate.” Penn State University, ​Penn State News, 10 July 2019, <a href="https://www.psu.edu/news/research/story/awareness-product-transformation-increases-recycling-rate/.">Link</a> </cite></li>
+            </ul>
+        </div>
+    </section>
+
+   
+
+    <section class="created" id = "contact">
+        <h1 class="header">POWERED BY:</h1>
+        <div class="container">
+         
+<svg width="256px" height="361px" viewBox="0 0 256 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <g>
+        <path d="M127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L127.843868,360.087912 Z" fill="#264DE4"></path>
+        <path d="M212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L212.416703,314.546637 L212.416703,314.546637 Z" fill="#2965F1"></path>
+        <path d="M53.6685714,188.636132 L56.530989,220.572835 L128,220.572835 L128,188.636132 L53.6685714,188.636132 L53.6685714,188.636132 Z" fill="#EBEBEB"></path>
+        <path d="M47.917011,123.994725 L50.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L47.917011,123.994725 Z" fill="#EBEBEB"></path>
+        <path d="M128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L128,271.580132 Z" fill="#EBEBEB"></path>
+        <path d="M60.4835165,0 L99.1648352,0 L99.1648352,16.1758242 L76.6593407,16.1758242 L76.6593407,32.3516484 L99.1648352,32.3516484 L99.1648352,48.5274725 L60.4835165,48.5274725 L60.4835165,0 L60.4835165,0 Z" fill="#000000"></path>
+        <path d="M106.901099,0 L145.582418,0 L145.582418,14.0659341 L123.076923,14.0659341 L123.076923,16.8791209 L145.582418,16.8791209 L145.582418,49.2307692 L106.901099,49.2307692 L106.901099,34.4615385 L129.406593,34.4615385 L129.406593,31.6483516 L106.901099,31.6483516 L106.901099,0 L106.901099,0 Z" fill="#000000"></path>
+        <path d="M153.318681,0 L192,0 L192,14.0659341 L169.494505,14.0659341 L169.494505,16.8791209 L192,16.8791209 L192,49.2307692 L153.318681,49.2307692 L153.318681,34.4615385 L175.824176,34.4615385 L175.824176,31.6483516 L153.318681,31.6483516 L153.318681,0 L153.318681,0 Z" fill="#000000"></path>
+        <path d="M202.126769,188.636132 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.932132 L172.892132,155.932132 L169.98611,188.636132 L127.889582,188.636132 L127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L202.126769,188.636132 Z" fill="#FFFFFF"></path>
+    </g>
+</svg>
+<svg width="256px" height="361px" viewBox="0 0 256 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <g>
+        <path d="M255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L255.554813,70.7657143 Z" fill="#E44D26"></path>
+        <path d="M128,337.950242 L212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L128,337.950242 Z" fill="#F16529"></path>
+        <path d="M82.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L48.6814945,132.562989 L56.530989,220.572835 L128,220.572835 L128,188.636132 L85.7389011,188.636132 L82.8202198,155.932132 L82.8202198,155.932132 Z" fill="#EBEBEB"></path>
+        <path d="M90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L90.0177582,236.54189 Z" fill="#EBEBEB"></path>
+        <path d="M24.1807473,0 L40.4107253,0 L40.4107253,16.0351648 L55.2573187,16.0351648 L55.2573187,0 L71.488,0 L71.488,48.5584176 L55.258022,48.5584176 L55.258022,32.2981978 L40.4114286,32.2981978 L40.4114286,48.5584176 L24.1814505,48.5584176 L24.1814505,0 L24.1807473,0 L24.1807473,0 Z" fill="#000000"></path>
+        <path d="M92.8309451,16.1026813 L78.5427692,16.1026813 L78.5427692,0 L123.356835,0 L123.356835,16.1026813 L109.06233,16.1026813 L109.06233,48.5584176 L92.8316484,48.5584176 L92.8316484,16.1026813 L92.8309451,16.1026813 L92.8309451,16.1026813 Z" fill="#000000"></path>
+        <path d="M130.469275,0 L147.392703,0 L157.802901,17.061978 L168.202549,0 L185.132308,0 L185.132308,48.5584176 L168.969143,48.5584176 L168.969143,24.4901978 L157.802901,41.7554286 L157.523692,41.7554286 L146.349714,24.4901978 L146.349714,48.5584176 L130.469275,48.5584176 L130.469275,0 L130.469275,0 Z" fill="#000000"></path>
+        <path d="M193.20967,0 L209.444571,0 L209.444571,32.5077802 L232.268659,32.5077802 L232.268659,48.5584176 L193.20967,48.5584176 L193.20967,0 L193.20967,0 Z" fill="#000000"></path>
+        <path d="M127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L127.889582,188.636132 L127.889582,220.572835 L127.889582,220.572835 Z" fill="#FFFFFF"></path>
+        <path d="M127.889582,155.854066 L127.889582,155.932132 L205.032791,155.932132 L205.673495,148.753582 L207.128615,132.562989 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.854066 L127.889582,155.854066 Z" fill="#FFFFFF"></path>
+    </g>
+</svg>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <g>
+        <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
+        <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"></path>
+        <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"></path>
+    </g>
+</svg>
+
+<h2>
+    Created by Ayden Armstrong 
+</h2>
+<h2>
+    Washington State University
+</h2>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/rive-js"></script>
+
+    <script>
+
+        const button = document.querySelector('.button')
+
+        const r = new rive.Rive({
+            src: 'rive.riv.riv',
+            canvas: document.getElementById('canvas'),
+            autoplay: true,
+            stateMachines: 'State Machine 1',
+            fit: rive.Fit.cover,
+
+            onLoad: (_) => {
+                const inputs = r.stateMachineInputs('State Machine 1');
+                const bumpTrigger = inputs.find(i => i.name === 'Trigger 1');
+                button.onclick = () =>{
+                    bumpTrigger.fire();
+                    
+                    button.innerHTML = "Click again"
+                } 
+            },
+
+            onStateChange: (event) => {
+                if(event.data[0] == 'Money'){
+                    button.innerHtml = "Click Again"
+                }
+                if(event.data[0] == 'cycle'){
+                    button.innerHtml = "Click Me"
+                }
+            }
+
+
+            
+        });
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+</body>
+</html>
+
